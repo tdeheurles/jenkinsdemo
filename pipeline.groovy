@@ -3,19 +3,14 @@ pipeline {
 
 
     stages {
-        stage('Build') {
+        stage('say hello') {
             steps {
-                echo 'Building..'
+                echo "I've run"
             }
         }
-        stage('Test') {
+        stage('exec script') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                ./demo_script.sh
             }
         }
     }
