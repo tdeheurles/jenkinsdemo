@@ -1,7 +1,6 @@
 pipeline {
     agent any
 
-
     stages {
         stage('say hello') {
             steps {
@@ -10,7 +9,7 @@ pipeline {
         }
         stage('exec script') {
             steps {
-                sh ./demo_script.sh
+                sh './demo_script.sh'
             }
         }
     }
